@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DataprovidersSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DataWithMultipleTests(failed)">
+    <parameter name="invalidPassword" value="8May97"/>
+    <parameter name="validEmail" value="nikhee851997@gmail.com"/>
+    <parameter name="validPassword" value="8May1997"/>
+    <parameter name="URL" value="https://www.amazon.com"/>
+    <parameter name="invalidEmail" value="nikhil851997@gmail.com"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.automationday_TestNG.PractiseDp_MTC">
+        <methods>
+          <include name="invalidPasswordUsingNegSoftAssert" invocation-numbers="0 1 2 3"/>
+          <include name="validCredentialsUsingSoftAssert" invocation-numbers="0 1 2 3"/>
+          <include name="invalidEmailUsingNegHardAssert" invocation-numbers="0 1 2 3"/>
+          <include name="validCredentialsUsingHardAssert" invocation-numbers="3"/>
+          <include name="urlSetup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.automationday_TestNG.PractiseDp_MTC -->
+    </classes>
+  </test> <!-- DataWithMultipleTests(failed) -->
+</suite> <!-- Failed suite [DataprovidersSuite] -->

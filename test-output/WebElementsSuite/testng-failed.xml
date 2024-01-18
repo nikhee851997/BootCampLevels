@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WebElementsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TutorialsTest(failed)">
+    <parameter name="Username" value="seleniumpanda@gmail.com"/>
+    <parameter name="URL" value="https://tutorialsninja.com/demo"/>
+    <parameter name="Password" value="Selenium@123"/>
+    <classes>
+      <class name="com_automationday_TestNG.T2_WebElements_Rediff">
+        <methods>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="Logout" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="Open"/>
+        </methods>
+      </class> <!-- com_automationday_TestNG.T2_WebElements_Rediff -->
+    </classes>
+  </test> <!-- TutorialsTest(failed) -->
+  <test thread-count="5" name="RediffTest(failed)">
+    <parameter name="Username" value="seleniumpanda@rediffmail.com"/>
+    <parameter name="URL" value="https://rediff.com"/>
+    <parameter name="Password" value="Selenium@123"/>
+    <classes>
+      <class name="com_automationday_TestNG.T1_WebElements_Tutorials">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="logout" invocation-numbers="0"/>
+          <include name="Open"/>
+        </methods>
+      </class> <!-- com_automationday_TestNG.T1_WebElements_Tutorials -->
+    </classes>
+  </test> <!-- RediffTest(failed) -->
+</suite> <!-- Failed suite [WebElementsSuite] -->

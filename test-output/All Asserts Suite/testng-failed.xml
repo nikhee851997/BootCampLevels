@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Asserts Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Parmeterization Test(failed)">
+    <parameter name="invalidPassword" value="8Ma1997"/>
+    <parameter name="validEmail" value="nikhee851997@gmail.com"/>
+    <parameter name="validPassword" value="8May1997"/>
+    <parameter name="invalidEmail" value="nikhee881997@gmail.com"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com_automationday_TestNG.Parameters_All_Asserts_XML">
+        <methods>
+          <include name="close"/>
+          <include name="HardAss" invocation-numbers="0"/>
+          <include name="setURL"/>
+        </methods>
+      </class> <!-- com_automationday_TestNG.Parameters_All_Asserts_XML -->
+    </classes>
+  </test> <!-- Parmeterization Test(failed) -->
+</suite> <!-- Failed suite [All Asserts Suite] -->

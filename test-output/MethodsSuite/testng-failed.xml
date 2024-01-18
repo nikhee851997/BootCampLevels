@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MethodsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="IncludeExcludeTest(failed)">
+    <classes>
+      <class name="com_automationday_TestNG.T2_WebElements_Rediff">
+        <parameter name="Username" value="seleniumpanda@rediffmail.com"/>
+        <parameter name="URL" value="https://rediff.com"/>
+        <parameter name="Password" value="Selenium@123"/>
+        <methods>
+          <include name="Logout" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="Open"/>
+        </methods>
+      </class> <!-- com_automationday_TestNG.T2_WebElements_Rediff -->
+    </classes>
+  </test> <!-- IncludeExcludeTest(failed) -->
+</suite> <!-- Failed suite [MethodsSuite] -->
